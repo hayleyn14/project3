@@ -1,17 +1,16 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
-}
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" />
+    <title>ohmyfood</title>
 
-body {
-    box-sizing: border-box;
-    background: $colour-secondary;
-}
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/a27bad9647.js" crossorigin="anonymous"></script>
+</head>
