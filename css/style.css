@@ -1,13 +1,20 @@
 @media screen and (max-width: 768px) {
-  header {
-    background-color: aqua;
-  }
   header img {
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding: 20 20 20 20px;
+    height: 60px;
+    width: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
   }
 }
+header img {
+  padding: 20 20 20 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
 @media screen and (max-width: 768px) {
   .restaurants {
     background-color: grey;
@@ -15,6 +22,11 @@
   .restaurants img {
     height: 50px;
     width: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location-icon {
+    display: inline;
   }
 }
 
