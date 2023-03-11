@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  header {
+    background-color: aqua;
+  }
+  header img {
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restaurants {
+    background-color: grey;
+  }
+  .restaurants img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
