@@ -9,8 +9,9 @@
 .location-icon {
   display: flex;
   justify-content: center;
+  width: 100%;
   background-color: #d4d0d0;
-  box-shadow: inset 0px -11px 8px -10px black;
+  box-shadow: inset 0px 11px 8px -10px black;
   padding-top: 10px;
   padding-bottom: 10px;
   @include text_font;
@@ -54,6 +55,9 @@
   border-radius: 25px;
   padding: 5px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .go {
@@ -63,6 +67,9 @@
   border-radius: 25px;
   padding: 5px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 .restaurants {
   background-color: #f8f5f4;
@@ -70,4 +77,9 @@
     height: 50px;
     width: 50px;
   }
+}
+
+.foot img {
+  height: 50px;
+  width: 100px;
 }
