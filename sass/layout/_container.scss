@@ -9,8 +9,8 @@
 .location-icon {
   display: flex;
   justify-content: center;
-  background-color: #D4D0D0;
-  box-shadow: inset 0px -11px  8px -10px black;
+  background-color: #d4d0d0;
+  box-shadow: inset 0px -11px 8px -10px black;
   padding-top: 10px;
   padding-bottom: 10px;
   @include text_font;
@@ -21,7 +21,7 @@
 }
 
 .book {
-  background-color: #F8F5F4;
+  background-color: #f8f5f4;
   margin-top: 0px;
   padding: 20px;
   @include text_font;
@@ -37,17 +37,19 @@
 
 .choose {
   display: flex;
-  background-color: #F8F5F4;
+  background-color: #f8f5f4;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
   margin-bottom: 20px;
   margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .create {
   display: flex;
-  background-color: #F8F5F4;
+  background-color: #f8f5f4;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
@@ -56,14 +58,14 @@
 
 .go {
   display: flex;
-  background-color: #E9D2EC;
+  background-color: #e9d2ec;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
   margin-bottom: 20px;
 }
 .restaurants {
-  background-color: #F8F5F4;
+  background-color: #f8f5f4;
   img {
     height: 50px;
     width: 50px;
