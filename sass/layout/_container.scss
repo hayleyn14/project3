@@ -1,11 +1,71 @@
-@media screen and (max-width: 768px) {
-    .restaurants {
-        background-color: grey;
-    }
+.top_section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 
-    .restaurants img {
-        height: 50px;
-        width: 50px;
-    }
+.location-icon {
+  display: flex;
+  justify-content: center;
+  background-color: #D4D0D0;
+  box-shadow: inset 0px -11px  8px -10px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include text_font;
+}
 
+.location-icon i {
+  margin-right: 20px;
+}
+
+.book {
+  background-color: #F8F5F4;
+  margin-top: 0px;
+  padding: 20px;
+  @include text_font;
+}
+
+.instructions {
+  @include text_font;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.choose {
+  display: flex;
+  background-color: #F8F5F4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.create {
+  display: flex;
+  background-color: #F8F5F4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.go {
+  display: flex;
+  background-color: #E9D2EC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.restaurants {
+  background-color: #F8F5F4;
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }

@@ -1,33 +1,103 @@
-@media screen and (max-width: 768px) {
-  header img {
-    padding: 20 20 20 20px;
-    height: 60px;
-    width: 180px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-  }
-}
-header img {
-  padding: 20 20 20 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 100px;
+.search-bar__button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-  .restaurants {
-    background-color: grey;
-  }
-  .restaurants img {
-    height: 50px;
-    width: 50px;
-  }
+.search-bar__button--long {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  height: 50px;
+  width: 250px;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
 }
-@media screen and (max-width: 768px) {
-  .location-icon {
-    display: inline;
-  }
+
+header img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 220px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Shrikhand;
+}
+
+.top_section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.location-icon {
+  display: flex;
+  justify-content: center;
+  background-color: #D4D0D0;
+  box-shadow: inset 0px -11px 8px -10px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto;
+}
+
+.location-icon i {
+  margin-right: 20px;
+}
+
+.book {
+  background-color: #F8F5F4;
+  margin-top: 0px;
+  padding: 20px;
+  font-family: Roboto;
+}
+
+.instructions {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.choose {
+  display: flex;
+  background-color: #F8F5F4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.create {
+  display: flex;
+  background-color: #F8F5F4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.go {
+  display: flex;
+  background-color: #E9D2EC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.restaurants {
+  background-color: #F8F5F4;
+}
+.restaurants img {
+  height: 50px;
+  width: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

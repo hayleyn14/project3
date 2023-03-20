@@ -1,18 +1,13 @@
-@media screen and (max-width: 768px) {
-
-    header img {
-    padding: 20 20 20 20px;
-    height: 60px;
-    width: 180px;
+header {
+  img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 220px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 50px;
-    }
-}
-
-header img {
-    padding: 20 20 20 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 100px;   
+    @include title_font;
+  }
 }
