@@ -1,8 +1,4 @@
 .search-bar__button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.search-bar__button--long {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -13,5 +9,7 @@
     width: 250px;
     border-radius: 25px;
     background-image: linear-gradient(to bottom right, #9356DC, #FF79DA)
-
+    box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 30px;
 }

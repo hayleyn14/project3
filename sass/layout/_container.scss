@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #d4d0d0;
+  background-color: #E0DDE0;
   box-shadow: inset 0px 11px 8px -10px black;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -22,7 +22,10 @@
 }
 
 .book {
-  background-color: #f8f5f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light_background;
   margin-top: 0px;
   padding: 20px;
   @include text_font;
@@ -34,11 +37,28 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+  margin-top: 20px;
+  margin-bottom: 30px;
+  }
+  h2 {
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 928px) {
+    .instructions {
+    margin-left: 300px;
+    background-color: $light_background;
+    padding: 50px;
+  }
+    h2 {
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+  }
 
 .choose {
   display: flex;
-  background-color: #f8f5f4;
+  background-color: $light_background;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
@@ -50,7 +70,7 @@
 
 .create {
   display: flex;
-  background-color: #f8f5f4;
+  background-color: $light_background;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
@@ -62,7 +82,7 @@
 
 .go {
   display: flex;
-  background-color: #e9d2ec;
+  background-color: $colored_background;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 5px;
@@ -71,8 +91,18 @@
   padding-top: 10px;
   padding-left: 30px;
 }
+
+@media screen and (min-width: 928px) {
+  .middle_section {
+    display: flex;
+    align-content: space-between;
+    margin-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .restaurants {
-  background-color: #f8f5f4;
+  background-color: $light_background;
   img {
     height: 50px;
     width: 50px;
