@@ -24,12 +24,12 @@
     <main>
       <div class="top_section">
         <div class="location-icon">
-          <i class="fa-sharp fa-solid fa-location-dot"></i> Paris, Bellville
+          <i class="fa-sharp fa-solid fa-location-dot"></i> Paris, Belleville
         </div>
         <div class="middle_section">
           <div class="book">
             <h2>Book the menu you like</h2>
-            <p>Discover top-of-the-art restaurants that we picked for you</p>
+            <p>Discover top-of-the-art restaurants we <br> picked for you</p>
             <button class="search-bar__button" type="submit">
               Explore our restaurants
             </button>
@@ -37,15 +37,24 @@
           <div class="instructions">
             <h2>How it works</h2>
             <div class="choose">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+              <div class="number">1</div>
+              <div class="choose_icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
               <p>Choose a restaurant</p>
             </div>
             <div class="create">
-              <i class="fa-solid fa-list"></i>
+              <div class="number">2</div>
+              <div class="create_icon">
+                <i class="fa-solid fa-list"></i>
+              </div>
               <p>Create your menu</p>
             </div>
             <div class="go">
-              <i class="fa-solid fa-store"></i>
+              <div class="number">3</div>
+              <div class="go_icon">
+                <i class="fa-solid fa-store"></i>
+              </div>
               <p>Go enjoy it at the restaurant</p>
             </div>
           </div>
@@ -53,34 +62,45 @@
       </div>
       <div class="restaurants">
         <h2>Restaurants</h2>
-        <div id="the_full_palette_card">
-          <img
-            src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="The Full Palette"
-          />
+        <div id="restaurants_card">
+          <img src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="The Full Palette" width="240px" height="200px">
+          <div class="restaurants_card_body">
+            <h3>The Full Palette</h3>
+            <p>New York</p>
+          </div>
         </div>
-        <div id="the_enchanted_plate_card">
+        <div id="restaurants_card">
           <!-- <img
             src="assets/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt="The Enchanted Plate"
-          /> -->
+            alt="The Enchanted Plate"> -->
+          <div class="restaurants_card_body">
+            <h3>The Enchanted Plate</h3>
+            <p>New York</p>
+          </div>
         </div>
-        <div id="restaurant_cards">
+        <div id="restaurants_card">
           <!-- <img
             src="assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt="Bastille"
-          /> -->
+            alt="Bastille"> -->
+          <div class="restaurants_card_body">
+            <h3>Bastille</h3>
+            <p>New York</p>
+          </div>
         </div>
-        <div id="restaurant_cards">
+        <div id="restaurants_card">
           <!-- <img
             src="assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="Le Gormand"
-          /> -->
+            alt="Le Gormand"> -->
+          <div class="restaurants_card_body">
+            <h3>Le Gormand</h3>
+            <p>New York</p>
+          </div>
         </div>
       </div>
     </main>
 
-    <!-- <footer>
+    <footer>
       <div id="foot">
         <img src="assets/ohmyfood.png" alt="ohmyfood logo" />
         <ul>
@@ -90,6 +110,6 @@
           <li>Contact</li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
