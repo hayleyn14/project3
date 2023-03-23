@@ -71,10 +71,14 @@ header img {
     margin-left: 40px;
     margin-top: 20px;
     height: 380px;
+    padding-right: 30px;
   }
   .book h2 {
     margin-left: 30px;
     margin-bottom: 20px;
+  }
+  .book p {
+    margin-top: 50px;
   }
 }
 
@@ -189,13 +193,14 @@ header img {
 @media screen and (min-width: 928px) {
   .middle_section {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 }
 .restaurants {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-color: #f8f5f4;
 }
 .restaurants h2 {
@@ -203,43 +208,50 @@ header img {
   padding-left: 20px;
   font-family: Roboto;
 }
-
-.restaurants_card {
-  width: 240px;
+.restaurants .restaurants_card img {
+  width: 320px;
   height: 250px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.restaurants .new_icon {
+  background-color: #99E2D0;
+  font-family: Roboto;
+  width: 40px;
+  font-weight: 700;
+  padding: 10px;
+  position: relative;
+}
+.restaurants .restaurants_card_body {
+  width: 320px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border: 3px solid white;
   background-color: white;
-  border-radius: 25px;
-  padding-top: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding-bottom: 3px;
-}
-
-.restaurants_card img {
-  height: 200px;
-  width: 240px;
-}
-
-.restaurants_card_body {
-  text-align: center;
-  text-align: justify;
-  margin-bottom: 5px;
-  font-size: smaller;
-  border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  height: 20px;
+  border-bottom-right-radius: 25px;
   font-family: Roboto;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
-.restaurants_card_body h3 {
+.restaurants h3 {
   font-weight: 700;
+}
+.restaurants .heart_icon {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 280px;
+  font-size: x-large;
+  margin-top: -30px;
+}
+@media screen and (min-width: 928px) {
+  .restaurants {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    box-shadow: inset 0px 11px 8px -10px black;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
