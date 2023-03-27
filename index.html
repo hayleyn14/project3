@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
     <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,10 @@
         <div class="middle_section">
           <div class="book">
             <h2>Book the menu you like</h2>
-            <p>Discover top-of-the-art restaurants we <br> picked for you</p>
+            <p>
+              Discover top-of-the-art restaurants we <br />
+              picked for you
+            </p>
             <button class="search-bar__button" type="submit">
               Explore our restaurants
             </button>
@@ -62,15 +65,21 @@
       </div>
       <div class="restaurants">
         <h2>Restaurants</h2>
-        <div id="restaurants_card">
-          <img src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="The Full Palette" width="320" height="180">
-            <div class="new_icon">New</div>
-            <div class="restaurants_card_body">
+        <!-- TODO wrap all restaurant cards with a div flex align items centre -->
+        <div class="restaurants_card">
+          <img
+            src="assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="The Full Palette"
+          />
+          <div class="new_icon">New</div>
+          <div class="restaurants_card_body">
             <h3>The Full Palette</h3>
             <p>New York</p>
             <div class="heart_icon">
               <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="solid_heart_icon">
+              <i class="fa-solid fa-heart"></i>
             </div>
           </div>
         </div>
