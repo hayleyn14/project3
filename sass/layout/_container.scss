@@ -188,7 +188,9 @@
     width: 40px;
     font-weight: 700;
     padding: 10px;
-    position: relative;
+    // position: absolute;
+    // top: 8px;
+    // right: 16px;
   }
   .restaurants_card_body {
     width: 320px;
@@ -212,12 +214,33 @@
     margin-left:280px;
     font-size: x-large;
     margin-top: -30px;
+    transition: background-color 250ms;
+    transition-duration: 400ms;
+    &:hover {
+        color: #9356DC;
+    }
   }
   @media screen and (min-width: 928px) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     box-shadow: inset 0px 11px 8px -10px black;
+    h2 {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  li {
+    text-decoration: none;
+  }
+} 
 

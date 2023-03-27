@@ -1,3 +1,7 @@
+a:hover before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .search-bar__button {
   display: flex;
   align-content: center;
@@ -220,7 +224,6 @@ header img {
   width: 40px;
   font-weight: 700;
   padding: 10px;
-  position: relative;
 }
 .restaurants .restaurants_card_body {
   width: 320px;
@@ -244,14 +247,35 @@ header img {
   margin-left: 280px;
   font-size: x-large;
   margin-top: -30px;
+  transition: background-color 250ms;
+  transition-duration: 400ms;
+}
+.restaurants .heart_icon:hover {
+  color: #9356DC;
 }
 @media screen and (min-width: 928px) {
   .restaurants {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     box-shadow: inset 0px 11px 8px -10px black;
   }
+  .restaurants h2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.foot li {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
