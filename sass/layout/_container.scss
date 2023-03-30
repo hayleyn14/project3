@@ -191,7 +191,6 @@
       border-top-left-radius: 25px;
     }
   }
-
   .new_icon {
     align-items: center;
     background-color: #99e2d0;
@@ -252,19 +251,23 @@
       opacity: 100%;
     }
   }
-}
-
-@media screen and (min-width: 928px) {
-  .restaurant_wrap {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    box-shadow: inset 0px 11px 8px -10px black;
-  }
-  h2 {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (min-width: 928px) {
+    .restaurant_wrap {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      box-shadow: inset 0px 11px 8px -10px black;
+      padding-top: 40px;
+    }
+    .restaurants_card_body {
+      width: 400px;
+    }
+    .restaurants_card img {
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+    }
   }
 }
 
@@ -274,14 +277,27 @@
   justify-content: center;
   background-color: black;
   color: white;
-  img {
-    height: 30px;
-    margin-top: 30px;
+  .foot_image img {
+    color: white;
+    margin-left: 20px;
+    width: 100px;
+    height:30px;
     margin-bottom: 20px;
     @include title_font;
-    color: white;
   }
   li {
-    text-decoration: none;
+    @include text_font;
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
+  .cutlery li {
+    margin-left: 40px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+  }
+  .hands li {
+    margin-left: 40px;
+    margin-top: -20px;
+    padding-bottom: 20px;
   }
 }

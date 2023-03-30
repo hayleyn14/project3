@@ -18,7 +18,12 @@ a:hover before {
   padding-bottom: 10px;
   border: 0;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 darkgrey rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 928px) {
+  .search-bar__button {
+    margin-top: 60px;
+  }
 }
 
 header {
@@ -289,20 +294,25 @@ header img {
 .restaurants .solid_heart_icon:hover {
   opacity: 100%;
 }
-
 @media screen and (min-width: 928px) {
-  .restaurant_wrap {
+  .restaurants .restaurant_wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
     box-shadow: inset 0px 11px 8px -10px black;
+    padding-top: 40px;
   }
-  h2 {
-    flex-direction: column;
-    align-items: center;
+  .restaurants .restaurants_card_body {
+    width: 400px;
+  }
+  .restaurants .restaurants_card img {
+    width: 400px;
+  }
+  .restaurants h2 {
+    text-align: center;
   }
 }
+
 .foot {
   display: flex;
   flex-direction: column;
@@ -310,15 +320,28 @@ header img {
   background-color: black;
   color: white;
 }
-.foot img {
+.foot .foot_image img {
+  color: white;
+  margin-left: 20px;
+  width: 100px;
   height: 30px;
-  margin-top: 30px;
   margin-bottom: 20px;
   font-family: Shrikhand;
-  color: white;
 }
 .foot li {
-  text-decoration: none;
+  font-family: Roboto;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+.foot .cutlery li {
+  margin-left: 40px;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+.foot .hands li {
+  margin-left: 40px;
+  margin-top: -20px;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
