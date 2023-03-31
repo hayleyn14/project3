@@ -361,4 +361,110 @@ a:link {
   padding-bottom: 20px;
 }
 
+.bastille_menu {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  background-color: #f8f5f4;
+}
+.bastille_menu h2 {
+  padding-left: 20px;
+}
+@media screen and (min-width: 928px) {
+  .bastille_menu {
+    height: 450px;
+    margin-left: 300px;
+    background-color: #f8f5f4;
+    background-color: #e0dde0;
+    box-shadow: inset 0px 11px 8px -10px darkgray;
+    padding: 10px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+  .bastille_menu h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.entrees {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #f8f5f4;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+.entrees .choose_icon {
+  color: darkgray;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.mains {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #f8f5f4;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+.mains .create_icon {
+  color: darkgray;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.deserts {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #ece3fa;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+.deserts .go_icon {
+  color: #9356dc;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+@media screen and (min-width: 928px) {
+  .middle_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

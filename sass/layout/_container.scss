@@ -309,3 +309,107 @@
     padding-bottom: 20px;
   }
 }
+
+.bastille_menu {
+  @include text_font;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  background-color: $light_background;
+  h2 {
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 928px) {
+    height: 450px;
+    margin-left: 300px;
+    background-color: $light_background;
+    background-color: $darker_location_background;
+    @include basic_inset_shadow;
+    padding: 10px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.entrees {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: $light_background;
+  @include box_shadow;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  @include text_font;
+  .choose_icon {
+    color: $choose_icon_main;
+    margin-right: 20px;
+    font-size: larger;
+  }
+}
+
+.mains {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: $light_background;
+  @include box_shadow;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  @include text_font;
+  .create_icon {
+    color: $choose_icon_main;
+    margin-right: 20px;
+    font-size: larger;
+  }
+}
+
+.deserts {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: $colored_background;
+  @include box_shadow;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  @include text_font;
+  .go_icon {
+    color: $choose_icon_colored;
+    margin-right: 20px;
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 928px) {
+  .middle_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
