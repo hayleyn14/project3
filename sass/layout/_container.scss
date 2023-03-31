@@ -11,7 +11,7 @@
   justify-content: center;
   width: 100%;
   background-color: $darker_location_background;
-  box-shadow: inset 0px 11px 8px -10px darkgray;
+  @include basic_inset_shadow;
   padding-top: 15px;
   padding-bottom: 15px;
   @include text_font;
@@ -41,7 +41,7 @@
     height: 430px;
     background-color: $light_background;
     background-color: #e0dde0;
-    box-shadow: inset 0px 11px 8px -10px darkgrey;
+    @include basic_inset_shadow;
     margin-left: 40px;
     margin-top: 20px;
     padding-right: 30px;
@@ -87,7 +87,7 @@
     margin-left: 300px;
     background-color: $light_background;
     background-color: $darker_location_background;
-    box-shadow: inset 0px 11px 8px -10px darkgrey;
+    @include basic_inset_shadow;
     padding: 10px;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -103,7 +103,7 @@
   align-items: center;
   width: 80%;
   background-color: $light_background;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @include box_shadow;
   border-radius: 25px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -125,7 +125,7 @@
   align-items: center;
   width: 80%;
   background-color: $light_background;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @include box_shadow;
   border-radius: 25px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -147,7 +147,7 @@
   align-items: center;
   width: 80%;
   background-color: $colored_background;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @include box_shadow;
   border-radius: 25px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -196,6 +196,7 @@
   .new_icon {
     align-items: center;
     background-color: $new_icon;
+
     @include text_font;
     width: 60px;
     font-weight: 700;
@@ -208,7 +209,7 @@
   .restaurants_card_body {
     position: relative;
     width: 320px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    @include box_shadow;
     transition: 0.3s;
     background-color: white;
     border-bottom-left-radius: 25px;
@@ -244,17 +245,14 @@
     margin-left: 280px;
     font-size: x-large;
     margin-top: -30px;
-    color: $gradient-background;
+    color: #9356dc;
   }
   @media screen and (min-width: 928px) {
-    .restaurants {
-      box-shadow: inset 0px 11px 8px -10px darkgray;
-    }
     .restaurant_wrap {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      box-shadow: inset 0px 11px 8px -10px black;
+      @include basic_inset_shadow;
       padding-top: 40px;
     }
     .restaurants_card_body {
@@ -268,7 +266,7 @@
       position: absolute;
       top: 70px;
       margin-left: 350px;
-      color: $gradient-background;
+      color: $gradient_background;
     }
     .heart_icon {
       position: absolute;
@@ -291,7 +289,7 @@
     color: white;
     margin-left: 20px;
     width: 100px;
-    height:30px;
+    height: 30px;
     margin-bottom: 20px;
     @include title_font;
   }

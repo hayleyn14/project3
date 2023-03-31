@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     color: white;
+    background-color: $gradient_background;
     font-weight: 700;
     height: 55px;
     width: 250px;
@@ -13,8 +14,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border: 0;
-    background-image: $gradient-background; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-image: $gradient_background; 
+    @include box_shadow;
     @media screen and (min-width: 928px) {
         margin-top: 60px;
     }

@@ -5,3 +5,15 @@
 @mixin text_font {
     font-family: Roboto;
 }
+
+@mixin basic_inset_shadow {
+    box-shadow: inset 0px 11px 8px -10px darkgray;
+}
+
+@mixin box_shadow {
+    box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+// @mixin new_icon_darken {
+//     adjust-color: ($color: #99e2d0 , $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 50%, $alpha: 1.0);
+// }
