@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #e0dde0;
+  background-color: $darker_location_background;
   box-shadow: inset 0px 11px 8px -10px darkgray;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -38,7 +38,7 @@
     text-align: center;
   }
   @media screen and (min-width: 928px) {
-    height: 450px;
+    height: 430px;
     background-color: $light_background;
     background-color: #e0dde0;
     box-shadow: inset 0px 11px 8px -10px darkgrey;
@@ -70,7 +70,7 @@
   }
   .number {
     justify-content: center;
-    background-color: #9356dc;
+    background-color: $number_background;
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -86,13 +86,13 @@
     height: 450px;
     margin-left: 300px;
     background-color: $light_background;
-    background-color: #e0dde0;
+    background-color: $darker_location_background;
     box-shadow: inset 0px 11px 8px -10px darkgrey;
     padding: 10px;
     margin-top: 30px;
     padding-bottom: 10px;
     h2 {
-      margin-left: 30px;
+      text-align: center;
       margin-bottom: 10px;
     }
   }
@@ -114,7 +114,7 @@
   font-weight: 700;
   @include text_font;
   .choose_icon {
-    color: darkgray;
+    color: $choose_icon_main;
     margin-right: 20px;
     font-size: larger;
   }
@@ -136,7 +136,7 @@
   font-weight: 700;
   @include text_font;
   .create_icon {
-    color: darkgray;
+    color: $choose_icon_main;
     margin-right: 20px;
     font-size: larger;
   }
@@ -158,7 +158,7 @@
   font-weight: 700;
   @include text_font;
   .go_icon {
-    color: #9356dc;
+    color: $choose_icon_colored;
     margin-right: 20px;
     font-size: larger;
   }
@@ -195,7 +195,7 @@
   }
   .new_icon {
     align-items: center;
-    background-color: #99e2d0;
+    background-color: $new_icon;
     @include text_font;
     width: 60px;
     font-weight: 700;
@@ -203,7 +203,7 @@
     position: absolute;
     top: 15px;
     right: 25px;
-    margin-left: 10px;
+    padding-left: 30px;
   }
   .restaurants_card_body {
     position: relative;
@@ -220,11 +220,11 @@
   h3 {
     font-weight: 700;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 5px;
   }
   p {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 15px;
   }
   .heart_icon {
@@ -235,8 +235,6 @@
     margin-left: 280px;
     font-size: x-large;
     margin-top: -30px;
-    transition: background-color 250ms;
-    transition-duration: 400ms;
   }
   .solid_heart_icon {
     display: flex;
@@ -246,14 +244,12 @@
     margin-left: 280px;
     font-size: x-large;
     margin-top: -30px;
-    transition: background-color 250ms;
-    transition-duration: 400ms;
-    background-image: linear-gradient(to top, #9356dc, #ff79da);
-    &:hover {
-      opacity: 100%;
-    }
+    color: $gradient-background;
   }
   @media screen and (min-width: 928px) {
+    .restaurants {
+      box-shadow: inset 0px 11px 8px -10px darkgray;
+    }
     .restaurant_wrap {
       flex-direction: row;
       flex-wrap: wrap;
@@ -267,6 +263,17 @@
     }
     .restaurants_card img {
       width: 400px;
+    }
+    .solid_heart_icon {
+      position: absolute;
+      top: 70px;
+      margin-left: 350px;
+      color: $gradient-background;
+    }
+    .heart_icon {
+      position: absolute;
+      top: 70px;
+      margin-left: 350px;
     }
     h2 {
       text-align: center;

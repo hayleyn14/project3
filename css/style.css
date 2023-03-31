@@ -37,6 +37,15 @@ header img {
   font-family: Shrikhand;
 }
 
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.foot a {
+  color: white;
+}
+
 .top_section {
   display: flex;
   flex-direction: column;
@@ -79,7 +88,7 @@ header img {
 }
 @media screen and (min-width: 928px) {
   .book {
-    height: 450px;
+    height: 430px;
     background-color: #f8f5f4;
     background-color: #e0dde0;
     box-shadow: inset 0px 11px 8px -10px darkgrey;
@@ -136,7 +145,7 @@ header img {
     padding-bottom: 10px;
   }
   .instructions h2 {
-    margin-left: 30px;
+    text-align: center;
     margin-bottom: 10px;
   }
 }
@@ -246,7 +255,7 @@ header img {
   position: absolute;
   top: 15px;
   right: 25px;
-  margin-left: 10px;
+  padding-left: 30px;
 }
 .restaurants .restaurants_card_body {
   position: relative;
@@ -263,11 +272,11 @@ header img {
 .restaurants h3 {
   font-weight: 700;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 5px;
 }
 .restaurants p {
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 15px;
 }
 .restaurants .heart_icon {
@@ -278,8 +287,6 @@ header img {
   margin-left: 280px;
   font-size: x-large;
   margin-top: -30px;
-  transition: background-color 250ms;
-  transition-duration: 400ms;
 }
 .restaurants .solid_heart_icon {
   display: flex;
@@ -289,14 +296,12 @@ header img {
   margin-left: 280px;
   font-size: x-large;
   margin-top: -30px;
-  transition: background-color 250ms;
-  transition-duration: 400ms;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
-}
-.restaurants .solid_heart_icon:hover {
-  opacity: 100%;
+  color: linear-gradient(to top, #9356DC, #FF79DA);
 }
 @media screen and (min-width: 928px) {
+  .restaurants .restaurants {
+    box-shadow: inset 0px 11px 8px -10px darkgray;
+  }
   .restaurants .restaurant_wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -310,6 +315,17 @@ header img {
   }
   .restaurants .restaurants_card img {
     width: 400px;
+  }
+  .restaurants .solid_heart_icon {
+    position: absolute;
+    top: 70px;
+    margin-left: 350px;
+    color: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  .restaurants .heart_icon {
+    position: absolute;
+    top: 70px;
+    margin-left: 350px;
   }
   .restaurants h2 {
     text-align: center;
