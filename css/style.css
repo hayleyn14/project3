@@ -27,6 +27,11 @@ a:hover before {
   }
 }
 
+.bastille_menu .search-bar__button {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -387,6 +392,18 @@ a:link {
 .bastille_menu h4 {
   font-weight: 700;
 }
+.bastille_menu h3 {
+  margin-left: 20px;
+}
+.bastille_menu img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bastille_menu .heart_icon {
+  margin-left: 300px;
+  font-size: larger;
+}
 .bastille_menu .citrus_squid {
   width: 80%;
   background-color: white;
@@ -398,7 +415,6 @@ a:link {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
-  font-weight: 700;
   font-family: Roboto;
 }
 .bastille_menu .veg_soup {
@@ -444,6 +460,20 @@ a:link {
   font-family: Roboto;
 }
 .bastille_menu .canard {
+  width: 80%;
+  background-color: white;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+.bastille_menu .game {
   width: 80%;
   background-color: white;
   box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);

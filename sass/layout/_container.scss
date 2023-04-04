@@ -330,6 +330,18 @@
   h4 {
     font-weight: 700;
   }
+  h3 {
+    margin-left: 20px;
+  }
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heart_icon {
+    margin-left: 300px;
+    font-size: larger;
+  }
   .citrus_squid {
     width: 80%;
     background-color: white;
@@ -341,7 +353,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
-    font-weight: 700;
     @include text_font;
   }
   .veg_soup {
@@ -387,6 +398,20 @@
     @include text_font;
   }
   .canard {
+    width: 80%;
+    background-color: white;
+    @include box_shadow;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-weight: 700;
+    @include text_font;
+  }
+  .game {
     width: 80%;
     background-color: white;
     @include box_shadow;
